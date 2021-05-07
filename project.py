@@ -21,16 +21,13 @@ class User:
 
 
 jim = User("Jim")
-jim.make_deposit(133).make_deposit(133).make_deposit(134).make_withdrawal(13)
-jim.display_user_balance()
+jim.make_deposit(133).make_deposit(133).make_deposit(134).make_withdrawal(13).display_user_balance()
 
 jake = User("Jake")
-jake.make_deposit(50).make_deposit(51).make_withdrawal(1).make_withdrawal(1)
-jake.display_user_balance()
+jake.make_deposit(50).make_deposit(51).make_withdrawal(1).make_withdrawal(1).display_user_balance()
 
 john = User("John")
-john.make_deposit(72).make_withdrawal(3).make_withdrawal(6).make_withdrawal(9)
-john.display_user_balance()
+john.make_deposit(72).make_withdrawal(3).make_withdrawal(6).make_withdrawal(9).display_user_balance()
 
 jim.transfer_money(john, 18)
 jim.display_user_balance()
